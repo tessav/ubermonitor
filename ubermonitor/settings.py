@@ -25,7 +25,9 @@ SECRET_KEY = 'e2q1(80*g%6u-v1(baub^u=e2+-+q0ded7m3uxeg4q8@rv=&6v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+'powerful-ravine-65361.herokuapp.com'
+]
 
 
 # Application definition
