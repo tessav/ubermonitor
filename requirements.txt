@@ -1,9 +1,11 @@
 APScheduler==3.3.1
 click==6.7
+dj-database-url==0.4.2
 Django==1.10.5
 funcsigs==1.0.2
 future==0.16.0
 futures==3.0.5
+gunicorn==19.6.0
 psycopg2==2.6.2
 pytz==2016.10
 PyYAML==3.12
