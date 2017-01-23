@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 'powerful-ravine-65361.herokuapp.com',
-'ec2-35-164-148-196.us-west-2.compute.amazonaws.com'
+'ec2-35-164-148-196.us-west-2.compute.amazonaws.com',
+'localhost'
 ]
 
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangobower',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +129,11 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_FINDERS = ['djangobower.finders.BowerFinder',]
+BOWER_COMPONENTS_ROOT = '/Users/tessavoon/dev/ubermonitorcloud/components'
+
+BOWER_INSTALLED_APPS = (
+    'jquery#1.9',
+    'underscore',
+    'd3'
+)
