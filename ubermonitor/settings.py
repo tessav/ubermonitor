@@ -26,7 +26,8 @@ SECRET_KEY = 'e2q1(80*g%6u-v1(baub^u=e2+-+q0ded7m3uxeg4q8@rv=&6v'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-'powerful-ravine-65361.herokuapp.com'
+'powerful-ravine-65361.herokuapp.com',
+'ec2-35-164-148-196.us-west-2.compute.amazonaws.com'
 ]
 
 
@@ -126,6 +127,3 @@ PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
-
-import dj_database_url
-DATABASES['default'] =  dj_database_url.config()

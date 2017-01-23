@@ -39,6 +39,7 @@ class Command(BaseCommand):
         r.trip = tripObject
         r.date = t.strftime('%y/%m/%d')
         r.time = t.strftime('%H:%M')
+        r.day = t.strftime('%A')
         r.distance = pooldata['distance']
         r.duration = pooldata['duration']
         r.high_est = pooldata['high_estimate']

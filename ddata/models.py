@@ -17,6 +17,7 @@ class Trip(models.Model):
 class RideDetails(models.Model):
     trip = models.ForeignKey(Trip, on_delete=models.CASCADE)
     date = models.CharField(max_length=200)
+    day = models.CharField(max_length=200)
     time = models.CharField(max_length=200)
     distance = models.FloatField(default=0)
     duration = models.IntegerField(default=0)
